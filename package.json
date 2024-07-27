@@ -7,5 +7,8 @@
   },
   "author": "dáfine lira",
   "license": "ISC",
-  "description": "API desenvolvida no programa explorer da rocket seat"
+  "description": "API desenvolvida no programa explorer da rocket seat",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
