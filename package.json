@@ -10,7 +10,8 @@
   "license": "ISC",
   "description": "API desenvolvida no programa explorer da rocket seat",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "express-async-errors": "^3.1.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"

@@ -1,3 +1,5 @@
+const AppError = require ("../utils/AppError");
+
 class UsersController {
 /**
  * como boa prática: ATÉ 5 funções
