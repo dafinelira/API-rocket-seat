@@ -1,5 +1,7 @@
 const AppError = require ("../utils/AppError");
 
+const sqliteConnection = require("../database/sqlite")
+
 class UsersController {
 /**
  * como boa prática: ATÉ 5 funções
@@ -9,10 +11,12 @@ class UsersController {
  * 4- update - PUT para atualizar um registo.
  * 5- delete - DELETE para remover um registro. 
  */
-    create(request, response){
+    async create(request, response){
         const{name, email, password} = request.body;
-    
-        response.status(201).json ({name, email, password})
+        
+        const database = await sqliteConnection();
+
+       /* response.status(201).json ({name, email, password})*/
     }
 }
 
