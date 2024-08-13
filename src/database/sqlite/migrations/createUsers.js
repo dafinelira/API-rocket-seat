@@ -1,4 +1,4 @@
-const createUsers_ = `
+const createUsers = `
   CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name VARCHAR,
@@ -10,4 +10,4 @@ const createUsers_ = `
   )
 `
 
-module.exports = createUsers_
+module.exports = createUsers
