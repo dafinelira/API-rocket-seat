@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "API desenvolvida no programa explorer da rocket seat",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "express": "^4.19.2",
     "express-async-errors": "^3.1.1",
     "sqlite": "^5.1.1",
