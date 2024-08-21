@@ -1,12 +1,12 @@
-exports.up = knex => knex.schema.createTable("tags", table => {
+exports.up = knex => knex.schema.createTable("links", table => {
     table.increments("id");
-    table.text("name").notNullable();
+    table.text("url").notNullable();
 
+    table.timestamp("created_at").default(knex.fn.now());
     table.integer("note_id").references("id").inTable("notes").onDelete("CASCADE");
-    table.integer("user_id").references("id").inTable("users");
+    
         
 });
 
 
 exports.down = knex => knex.schema.createTable("tags");
-
