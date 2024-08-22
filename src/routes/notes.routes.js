@@ -6,7 +6,7 @@ const notesRoutes = Router();
 
 const notesController = new NotesController();
 
-usersRoutes.post("/", notesController.create);
+notesRoutes.post("/:user_id", notesController.create);
 
 
 
